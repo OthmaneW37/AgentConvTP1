@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ma.emsi.moussawiothmane</groupId>
-    <artifactId>tp0MoussawiOthmane</artifactId>
+    <artifactId>tp1MoussawiOthmane</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>tp0MoussawiOthmane</name>
+    <name>tp1MoussawiOthmane</name>
     <packaging>war</packaging>
 
     <properties>
