@@ -1,4 +1,4 @@
-package ma.emsi.othmanemoussawi.tp1.jsf;
+package ma.emsi.othmanemoussawi.tp1othmanemoussawi.jsf;
 
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
@@ -6,8 +6,8 @@ import jakarta.faces.model.SelectItem;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
-import ma.emsi.othmanemoussawi.tp1.llm.JsonAdapterPourGemini;
-import ma.emsi.othmanemoussawi.tp1.llm.LlmInteraction;
+import ma.emsi.othmanemoussawi.tp1othmanemoussawi.llm.JsonAdapterPourGemini;
+import ma.emsi.othmanemoussawi.tp1othmanemoussawi.llm.LlmInteraction;
 
 import java.io.Serializable;
 import java.util.ArrayList;
