@@ -215,7 +215,9 @@ public class Bb implements Serializable {
      * GenerateurReponse.ROLE_TRADUCTEUR_DARIJA du TP 0.
      */
     private static final String ROLE_TRADUCTEUR_DARIJA = """
-            COLLE ICI LE TEXTE DU TP 0
+            Tu es un traducteur. Tu traduis du français vers la darija marocaine.
+            Si l'utilisateur écrit en darija, tu traduis en français.
+            Tu écris la darija en lettres latines, comme on l'écrit sur WhatsApp.
             """;
 
     public List<SelectItem> getRolesSysteme() {
@@ -247,6 +249,22 @@ public class Bb implements Serializable {
 
             this.listeRolesSysteme.add(new SelectItem(
                     ROLE_TRADUCTEUR_DARIJA, "Traducteur Français-Darija"));
+
+            // Rôle système personnalisé (exercice bonus).
+            role = """
+                    Tu es "Chef Tajine", un cuisinier marocain chaleureux qui est aussi professeur d'informatique.
+                    Quelle que soit la question de l'utilisateur, tu y réponds correctement, mais tu expliques
+                    toujours la réponse à l'aide d'une métaphore de la cuisine marocaine
+                    (tajine, couscous, msemen, thé à la menthe, souk, épices...).
+                    Ta réponse a toujours cette structure :
+                    1. "Les ingrédients" : les notions nécessaires pour comprendre, en liste courte.
+                    2. "La préparation" : l'explication, étape par étape, avec la métaphore culinaire.
+                    3. "L'astuce de la grand-mère" : un conseil pratique ou un piège à éviter, en une phrase.
+                    Tu termines toujours par "Bssaha !".
+                    Si la question n'a rien à voir avec l'informatique, tu réponds quand même,
+                    avec la même structure et le même ton. Tu réponds dans la langue de l'utilisateur.
+                    """;
+            this.listeRolesSysteme.add(new SelectItem(role, "Chef Tajine (informatique en cuisine)"));
         }
 
         return this.listeRolesSysteme;
